@@ -29,19 +29,19 @@ echo $this->getData('nav')->render(); ?>
     <div class="col-xs-12">
         <div class="box wf-100">
             <table class="default">
-                <caption><?= $this->getHtml('Projects') ?><i class="fa fa-download floatRight download btn"></i></caption>
+                <caption><?= $this->getHtml('Projects'); ?><i class="fa fa-download floatRight download btn"></i></caption>
                 <thead>
                 <tr>
                     <td><?= $this->getHtml('ID', '0', '0'); ?>
-                    <td><?= $this->getHtml('Status') ?>
-                    <td class="wf-100"><?= $this->getHtml('Name') ?>
-                    <td><?= $this->getHtml('Creator') ?>
-                    <td><?= $this->getHtml('Created') ?>
+                    <td><?= $this->getHtml('Status'); ?>
+                    <td class="wf-100"><?= $this->getHtml('Name'); ?>
+                    <td><?= $this->getHtml('Creator'); ?>
+                    <td><?= $this->getHtml('Created'); ?>
                 <tfoot>
                 <tr><td colspan="5">
                 <tbody>
                 <?php $c = 0; foreach ([] as $key => $value) : ++$c;
-                $url = \phpOMS\Uri\UriFactory::build('{/prefix}checklist/single?{?}&id=' . $value->getId()); ?>
+                $url     = \phpOMS\Uri\UriFactory::build('{/prefix}checklist/single?{?}&id=' . $value->getId()); ?>
                 <tr>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->getId()); ?></a>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->getName()); ?></a>
