@@ -7,7 +7,7 @@
         "name": "RnD",
         "uri": null,
         "target": null,
-        "icon": "fa fa-flask",
+        "icon": "science",
         "order": 110,
         "from": "ResearchDevelopment",
         "permission": { "permission": 2, "type": null, "element": null },
