@@ -20,7 +20,7 @@ echo $this->data['nav']->render(); ?>
         <form>
             <table class="layout wf-100">
                 <tr><td colspan="3"><label for="iName"><?= $this->getHtml('Name'); ?></label>
-                <tr><td colspan="2"><input type="text" id="iName" name="name" placeholder=""><td>
+                <tr><td colspan="2"><input type="text" id="iName" name="name"><td>
                 <tr><td colspan="3"><label for="iDescription"><?= $this->getHtml('Description'); ?></label>
                 <tr><td colspan="2"><textarea id="iDescription" name="description"></textarea><td>
                 <tr><td colspan="3"><label for="iStatus"><?= $this->getHtml('Status'); ?></label>
@@ -34,7 +34,7 @@ echo $this->data['nav']->render(); ?>
                 <tr><td colspan="3"><label for="iFiles"><?= $this->getHtml('Files'); ?></label>
                 <tr><td colspan="2"><input type="file" id="iFiles" name="file" multiple><td>
                 <tr><td colspan="3"><label for="iBudget"><?= $this->getHtml('Budget'); ?></label>
-                <tr><td colspan="2"><input type="text" id="iBudget" name="budget" placeholder=""><td>
+                <tr><td colspan="2"><input type="text" id="iBudget" name="budget"><td>
                 <tr><td><label for="iDue"><?= $this->getHtml('Start'); ?></label><td><label for="iDue"><?= $this->getHtml('Due'); ?></label><td>
                 <tr><td><input type="datetime-local" id="iDue" name="due"><td><input type="datetime-local" id="iDue" name="due"><td>
                 <tr><td><label for="iResponsibility"><?= $this->getHtml('Responsibility'); ?></label><td><label for="iUser"><?= $this->getHtml('UserGroup'); ?></label><td>
@@ -42,7 +42,7 @@ echo $this->data['nav']->render(); ?>
                             <option value="<?= $this->printHtml(\Modules\ProjectManagement\Models\ProjectResponsibility::MANAGER); ?>"><?= $this->getHtml('Manager'); ?>
                             <option value="<?= $this->printHtml(\Modules\ProjectManagement\Models\ProjectResponsibility::OTHER); ?>"><?= $this->getHtml('Other'); ?>
                         </select>
-                    <td><input type="text" id="iUser" name="user" placeholder=""><td><button><?= $this->getHtml('Add', '0', '0'); ?></button>
+                    <td><input type="text" id="iUser" name="user"><td><button><?= $this->getHtml('Add', '0', '0'); ?></button>
                 <tr><td colspan="3"><input type="submit" value="<?= $this->getHtml('Create', '0', '0'); ?>">
             </table>
         </form>
