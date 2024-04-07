@@ -10,7 +10,7 @@ return [
         [
             'dest'       => '\Modules\ResearchDevelopment\Controller\BackendController:viewProjectList',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::READ,
@@ -22,7 +22,7 @@ return [
         [
             'dest'       => '\Modules\ResearchDevelopment\Controller\BackendController:viewProjectCreate',
             'verb'       => RouteVerb::GET,
-            'active' => true,
+            'active'     => true,
             'permission' => [
                 'module' => BackendController::MODULE_NAME,
                 'type'   => PermissionType::CREATE,
