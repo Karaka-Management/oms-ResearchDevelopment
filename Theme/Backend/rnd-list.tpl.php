@@ -16,13 +16,6 @@ declare(strict_types=1);
  * @var \phpOMS\Views\View $this
  */
 
-$footerView = new \phpOMS\Views\PaginationView($this->l11nManager, $this->request, $this->response);
-$footerView->setTemplate('/Web/Templates/Lists/Footer/PaginationBig');
-
-$footerView->setPages(25);
-$footerView->setPage(1);
-$footerView->setResults(1);
-
 echo $this->data['nav']->render(); ?>
 
 <div class="row">
